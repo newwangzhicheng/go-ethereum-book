@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	//createKs()
 	importKs()
 }
 
@@ -24,7 +25,7 @@ func createKs() {
 }
 
 func importKs() {
-	file := "./wallets/UTC--2024-07-04T09-59-21.910265000Z--af41dbf0713ef6e17eddcab73fb07cd430d48813"
+	file := "./wallets/UTC--2024-07-08T13-07-39.293180000Z--aff286524d8bb0557e1d9f762b62ed82255f1de4"
 	ks := keystore.NewKeyStore("./temp", keystore.StandardScryptN, keystore.StandardScryptP)
 	// 读取文件
 	jsonBytes, err := ioutil.ReadFile(file)
